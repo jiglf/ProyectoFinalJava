@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="panelPrincipal" stylesheets="@../recursos/Estilos.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.controlador.ControladorPrincipal">
+   <children>
+      <ListView id="general" fx:id="listaHeroes" layoutX="32.0" layoutY="34.0" prefHeight="149.0" prefWidth="190.0" stylesheets="@../recursos/Estilos.css" />
+      <ListView id="general" fx:id="listaBestias" layoutX="371.0" layoutY="33.0" prefHeight="149.0" prefWidth="190.0" stylesheets="@../recursos/Estilos.css" />
+      <Label id="general" layoutX="32.0" layoutY="14.0" prefHeight="17.0" prefWidth="190.0" stylesheets="@../recursos/Estilos.css" text="Heroes" />
+      <Label id="general" layoutX="371.0" layoutY="14.0" prefHeight="17.0" prefWidth="190.0" stylesheets="@../recursos/Estilos.css" text="Bestias" />
+      <TextArea id="resumenBatalla" fx:id="tResumen" editable="false" layoutX="12.0" layoutY="255.0" prefHeight="200.0" prefWidth="576.0" stylesheets="@../recursos/Estilos.css" visible="false" />
+      <Label id="general" fx:id="labelResumen" alignment="CENTER" layoutX="232.0" layoutY="231.0" prefHeight="17.0" prefWidth="130.0" stylesheets="@../recursos/Estilos.css" text="Resumen Batalla" visible="false" />
+      <Button id="botones" layoutX="232.0" layoutY="34.0" mnemonicParsing="false" onAction="#nuevoPersonaje" prefHeight="64.0" prefWidth="130.0" stylesheets="@../recursos/Estilos.css" text="Nuevo Personaje" />
+      <Button id="botones" layoutX="233.0" layoutY="118.0" mnemonicParsing="false" onAction="#lucha" prefHeight="64.0" prefWidth="130.0" stylesheets="@../recursos/Estilos.css" text="¡LUCHA!" />
+      <Button id="botones" layoutX="32.0" layoutY="192.0" mnemonicParsing="false" onAction="#subirHeroe" prefHeight="23.0" prefWidth="55.0" stylesheets="@../recursos/Estilos.css" text="Subir" />
+      <Button id="botones" layoutX="89.0" layoutY="192.0" mnemonicParsing="false" onAction="#bajarHeroe" prefHeight="23.0" prefWidth="65.0" stylesheets="@../recursos/Estilos.css" text="Bajar" />
+      <Button id="botones" layoutX="156.0" layoutY="192.0" mnemonicParsing="false" onAction="#eliminarHeroe" stylesheets="@../recursos/Estilos.css" text="Eliminar" />
+      <Button id="botones" layoutX="371.0" layoutY="192.0" mnemonicParsing="false" onAction="#subirBestia" prefHeight="23.0" prefWidth="55.0" stylesheets="@../recursos/Estilos.css" text="Subir" />
+      <Button id="botones" layoutX="428.0" layoutY="192.0" mnemonicParsing="false" onAction="#bajarBestia" prefHeight="23.0" prefWidth="65.0" stylesheets="@../recursos/Estilos.css" text="Bajar" />
+      <Button id="botones" layoutX="495.0" layoutY="192.0" mnemonicParsing="false" onAction="#eliminarBestia" stylesheets="@../recursos/Estilos.css" text="Eliminar" />
+      <Pane id="panelCrear" fx:id="panelCrear" layoutX="182.0" layoutY="231.0" prefHeight="200.0" prefWidth="241.0" stylesheets="@../recursos/Estilos.css" visible="false">
+         <children>
+            <Label id="general" layoutX="14.0" layoutY="21.0" stylesheets="@../recursos/Estilos.css" text="Nombre" />
+            <Label id="general" layoutX="14.0" layoutY="46.0" stylesheets="@../recursos/Estilos.css" text="Raza" />
+            <Label id="general" layoutX="14.0" layoutY="76.0" stylesheets="@../recursos/Estilos.css" text="Vida" />
+            <Label id="general" layoutX="10.0" layoutY="102.0" stylesheets="@../recursos/Estilos.css" text="Armadura" />
+            <TextField id="general" fx:id="tNombre" layoutX="75.0" layoutY="17.0" prefHeight="23.0" prefWidth="150.0" stylesheets="@../recursos/Estilos.css" />
+            <ChoiceBox id="general" fx:id="tChoice" layoutX="74.0" layoutY="44.0" prefWidth="150.0" stylesheets="@../recursos/Estilos.css" />
+            <TextField id="general" fx:id="tVida" layoutX="75.0" layoutY="71.0" prefHeight="23.0" prefWidth="150.0" stylesheets="@../recursos/Estilos.css" />
+            <TextField id="general" fx:id="tArmadura" layoutX="75.0" layoutY="98.0" prefHeight="23.0" prefWidth="150.0" stylesheets="@../recursos/Estilos.css" />
+            <Button id="botones" layoutX="72.0" layoutY="134.0" mnemonicParsing="false" onAction="#crearPersonaje" prefHeight="40.0" prefWidth="121.0" stylesheets="@../recursos/Estilos.css" text="Crear" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,42 @@
+
+#general {
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#tituloGeneral {
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-font-size: xx-large;
+    -fx-font-weight: 900;
+    -fx-align-self: center;
+    
+}
+
+#campoCargando {
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+    -fx-text-box-border: transparent;
+
+}
+
+#botones {
+    -fx-background-color:burlywood;
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-;
+    -fx-font-weight: 400;
+    -fx-border-style:solid;
+    -fx-border-width:2;
+
+}
+
+#resumenBatalla {
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-background-color: burlywood;
+}
+
+#panelCrear {
+    -fx-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    
+}
